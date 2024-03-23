@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+import inquirer from "inquirer";
 const answer = await inquirer.prompt([
   { message: "Enter your first number", type: "number", name: "firstNumber" },
   { message: "Enter your second number", type: "number", name: "secondNumber" },
@@ -23,4 +24,3 @@ if (answer.operator === "Addition") {
 } else {
     console.log("Please select valid operator")
 }
-console.log("THE END")
